@@ -7,19 +7,20 @@
     <title>Page 3</title>
     <script type="module" crossorigin src="/goit-js-hw-10/2-snackbar.js"></script>
     <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/modulepreload-polyfill-B5Qt9EMX.js">
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BsWh0j-M.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-DnveWo0P.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-FpQd-YRf.css">
+    <link rel="modulepreload" crossorigin href="/goit-js-hw-10/assets/vendor-BbbuE1sJ.js">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/vendor-CZjNVMTf.css">
+    <link rel="stylesheet" crossorigin href="/goit-js-hw-10/assets/styles-qOKWYjFM.css">
   </head>
   <body>
-    <a class="back-link" href="./index.html">Go back</a>
-
+    <div class="container"><a class="back-link" href="./index.html">Go back</a></div>
     <main>
       <form class="form">
-        <label>
-          Delay (ms)
-          <input type="number" name="delay" required />
+        
+        <label class="delay-cont">
+         <span>Delay (ms)</span>
+          <input type="number" class="delay-input" name="delay" required />
         </label>
+      
       
         <fieldset>
           <legend>State</legend>
@@ -33,7 +34,7 @@
           </label>
         </fieldset>
       
-        <button type="submit">Create notification</button>
+        <button type="submit" class="btn-state">Create notification</button>
       </form>
       
     </main>
