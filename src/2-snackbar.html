@@ -8,14 +8,15 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <a class="back-link" href="./index.html">Go back</a>
-
+    <div class="container"><a class="back-link" href="./index.html">Go back</a></div>
     <main>
       <form class="form">
-        <label>
-          Delay (ms)
-          <input type="number" name="delay" required />
+        
+        <label class="delay-cont">
+         <span>Delay (ms)</span>
+          <input type="number" class="delay-input" name="delay" required />
         </label>
+      
       
         <fieldset>
           <legend>State</legend>
@@ -29,7 +30,7 @@
           </label>
         </fieldset>
       
-        <button type="submit">Create notification</button>
+        <button type="submit" class="btn-state">Create notification</button>
       </form>
       
     </main>

@@ -1,10 +1,11 @@
 import flatpickr from 'flatpickr';
 import iziToast from 'izitoast';
+import "izitoast/dist/css/iziToast.min.css";
+import "flatpickr/dist/flatpickr.min.css";
 
 const datetimePicker = document.getElementById('datetime-picker');
 const startButton = document.querySelector('[data-start]');
 startButton.disabled = true;
-
 const elements = {
   days: document.querySelector('[data-days]'),
   hours: document.querySelector('[data-hours]'),
@@ -40,6 +41,8 @@ function updateTimer() {
   if (timeDifference <= 0) {
     clearInterval(timerInterval);
     resetTimerDisplay();
+    datetimePicker.disabled = false; 
+    startButton.disabled = true; 
     return;
   }
 
@@ -86,6 +89,9 @@ startButton.addEventListener('click', () => {
   if (timerInterval) {
     clearInterval(timerInterval);
   }
+
+  datetimePicker.disabled = true; 
+  startButton.disabled = true; 
 
   timerInterval = setInterval(updateTimer, 1000);
 });
